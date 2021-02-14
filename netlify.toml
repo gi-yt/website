@@ -1,116 +1,33 @@
+[build]
+publish = "public"
+command = "hugo --gc --minify"
+
 [context.production.environment]
-  HUGO_VERSION = "0.75.1"
+HUGO_VERSION = "0.80.0"
+HUGO_ENV = "production"
+HUGO_ENABLEGITINFO = "true"
 
-  [[plugins]]
-package = "@netlify/plugin-sitemap"
+[context.split1]
+command = "hugo --gc --minify --enableGitInfo"
 
-  [plugins.inputs]
-  buildDir = "public"
-  exclude = [
-    # By file Path
-    #'./build-dir/path-to/file.html',
-    # By Glob pattern
-    '**/page/**'
-  ]
+[context.split1.environment]
+HUGO_VERSION = "0.80.0"
+HUGO_ENV = "production"
 
-[[redirects]]
-  from = "https://store.christitus.com/*"
-  to = "https://portal.christitus.com/e3532423-ee96-4ebd-b228-7bb9f9b1d9b2"
-  status = 301
-  force = true
+[context.deploy-preview]
+command = "hugo --gc --minify --buildFuture -b $DEPLOY_PRIME_URL"
 
-[[redirects]]
-  from = "/roboform"
-  to = "https://www.anrdoezrs.net/click-9109049-14329390"
-  status = 301
-  force = true
+[context.deploy-preview.environment]
+HUGO_VERSION = "0.80.0"
 
-[[redirects]]
-  from = "/easywp"
-  to = "https://www.jdoqocy.com/click-100287975-14061248"
-  status = 301
-  force = true
+[context.branch-deploy]
+command = "hugo --gc --minify -b $DEPLOY_PRIME_URL"
 
-[[redirects]]
-  from = "/linode"
-  to = "https://linode.gvw92c.net/xA1Rk"
-  status = 301
-  force = true
+[context.branch-deploy.environment]
+HUGO_VERSION = "0.80.0"
 
-[[redirects]]
-  from = "/Binance"
-  to = "https://www.binance.com/en/register?ref%3DEXCXLJ84"
-  status = 301
-  force = true
+[context.next.environment]
+HUGO_ENABLEGITINFO = "true"
 
-[[redirects]]
-  from = "/gemini"
-  to = "https://gemini.com/share/j94zggt7"
-  status = 301
-  force = true
 
-[[redirects]]
-  from = "/celsius"
-  to = "https://celsiusnetwork.app.link/19371707f3"
-  status = 301
-  force = true
 
-[[redirects]]
-  from = "/partedmagic"
-  to = "https://partedmagic.com/store/?ref=35"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/join"
-  to = "https://www.youtube.com/channel/UCg6gPGh8HU2U01vaFCAsvmQ/join"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/antivirus"
-  to = "https://www.tkqlhce.com/click-9109049-11676352"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/coinbase"
-  to = "https://www.coinbase.com/join/titus_0u"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/lbry"
-  to = "https://odysee.com/$/invite/@christitustech:5"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/ekster"
-  to = "https://ekster.com?sca_ref=128599.0kgNiKicwL"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/namecheap"
-  to = "http://www.dpbolvw.net/click-9109049-13266668"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/pluralsite"
-  to = "https://pluralsight.pxf.io/kGOjL"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/expressvpn"
-  to = "https://www.expressvpn.com/christitustech"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/blockfi"
-  to = "https://blockfi.com/?ref=4658fd40"
-  status = 301
-  force = true
