@@ -6,49 +6,17 @@
     weight = 1
 
 [[main]]
-    identifier = "store"
-    name = "Store"
-    pre = "<i class='fa fa-heart'></i>"
-    url = "https://portal.christitus.com/e3532423-ee96-4ebd-b228-7bb9f9b1d9b2"
-    weight = 9
-
-[[main]]
-    name = "Members"
-    post = ""
-    pre = "<i class='fa fa-heart'></i>"
-    url = "https://portal.christitus.com"
-    weight = 2
-
-[[main]]
     name = "Sections"
     post = ""
     pre = "<i class='fa fa-heart'></i>"
     weight = 3
 
-[[main]]
-    name = "Android"
-    url = "/categories/android"
-    parent = "Sections"
 
 [[main]]
     name = "Linux"
     url = "/categories/linux"
     parent = "Sections"
 
-[[main]]
-    name = "MacOS"
-    url = "/categories/macos"
-    parent = "Sections"
-
-[[main]]
-    name = "Networking"
-    url = "/categories/networking"
-    parent = "Sections"
-
-[[main]]
-    name = "Windows"
-    url = "/categories/windows"
-    parent = "Sections"
 
 [[main]]
     name = "Social"
@@ -57,25 +25,7 @@
     weight = 4
 
 [[main]]
-    name = "Odysee/LBRY"
-    url = "https://links.christitus.com/lbry"
-    hrefTargetBlank = true
-    parent = "Social"
-
-[[main]]
-    name = "Twitch"
-    url = "https://twitch.tv/christitustech"
-    hrefTargetBlank = true
-    parent = "Social"
-
-[[main]]
-    name = "Twitter"
-    url = "https://twitter.com/christitustech"
-    hrefTargetBlank = true
-    parent = "Social"
-
-[[main]]
     name = "YouTube"
-    url = "https://youtube.com/c/ChrisTitusTech"
+    url = "https://www.youtube.com/channel/UC3AmvMs0DT-4dypIaVzBEbw"
     hrefTargetBlank = true
     parent = "Social"
