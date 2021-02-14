@@ -1,7 +1,7 @@
-logoText = "Chris Titus Tech" # Logo text that appears in the site navigation bar.
+logoText = "Genius Infomedia" # Logo text that appears in the site navigation bar.
 logoType = "short" # long, short -> short: squre shape includes logo text, long: rectangle shape not includes logo text
 logo = true # Logo that appears in the site navigation bar.
-description = "Chris Titus Tech was started as a resource for all things technology. It has evolved from a YouTube channel to now be a resource for anyone wanted to learn about a variety of tech." # for SEO
+description = "Too Lazy To Write A Desc" # for SEO
 custom_css = ["scss/custom.scss"] # custom_css = ["scss/custom.scss"] and then make file at root/assets/scss/custom.scss
 custom_js = [] # custom_js = ["js/custom.js"] and then make file at root/assets/js/custom.js
 useFaviconGenerator = true # https://www.favicon-generator.org/
@@ -42,10 +42,9 @@ talksPaginate = 8 # items per page
 talksGroupByDate = "2006" # "2006-01": group by month, "2006": group by year
 
 # whoami: usage - home page sidebar, single page bottom of post. all values can be empty
-myname = "Chris Titus"
-email = "contact@christitus.com"
-whoami = "Tech Content Creator"
-bioImageUrl = "images/avatar.png" # image url like "http//..." or "images/anyfoldername/mybioimage.jpg" If not set, we find a avatar image in root/static/images/whoami/avatar.(png|jpg|svg)
+myname = "Genius Infomedia"
+email = "geniusinfomedia.protonmail.com"
+whoami = "Nobody"
 useGravatar = false # we use this option highest priority
 location = ""
 organization = ""
@@ -71,19 +70,9 @@ tocLevels = ["h2", "h3", "h4"] # minimum h2, maximum h4 in your article
 enableSidebarPostsByOrder = false # another lists in the sidebar
 
 # footer
-showPoweredBy = true # show footer text: Powered by Hugo and Zzo theme
 showFeedLinks = true # RSS Feed 
 showSocialLinks = true # email, facebook, twitter ...
 enableLangChange = false # show button at bottom left of footer.
-
-# service
-googleTagManager = "" # GTM-XXXXXX
-baiduAnalytics = "" # alternative of google analytics
-enableBusuanzi = false # if set true, total page view, total unique visitors show up in the footer.
-busuanziSiteUV = true # unique visitors (total number of visitors)
-busuanziSitePV = true # site total page view count
-busuanziPagePV = true # post view count
-
 # comment
 enableComment = true
 disqus_shortname = false
@@ -134,15 +123,15 @@ commento = true
   dataAttrs = "" # "data-isso='https://isso.example.com' data-isso-require-author='true'"
 
 [socialOptions] # if set, social icons will show up.
-  email = "mailto:contact@christitus.com"
+  email = "mailto:geniusinfomedia.protonmail.com"
   phone = ""
   facebook = ""
-  twitter = "https://twitter.com/christitustech"
-  github = "https://github.com/ChrisTitusTech"
+  twitter = ""
+  github = "https://github.com/gi-yt"
   stack-overflow = ""
-  instagram = "https://www.instagram.com/christitustech/"
+  instagram = ""
   google-plus = ""
-  youtube = "https://www.youtube.com/c/ChrisTitusTech"
+  youtube = "https://www.youtube.com/channel/UC3AmvMs0DT-4dypIaVzBEbw"
   medium = ""
   tumblr = ""
   linkedin = "https://www.linkedin.com/in/ctitus/"
@@ -164,14 +153,14 @@ commento = true
   dev-to = ""
   gitea = ""
   google-scholar = ""
-  twitch = "https://www.twitch.tv/christitustech"
+  twitch = ""
 
 [donationOptions]
   enable = false # if set, the donation button will show up on the single page.
   alipay = "" # Alipay QR Code image (example path: images/donation/alipay-qrcode.png) and put your file at root/static/images/donation/
   wechat = "" # Wechat pay QR Code image (example path: same as above)
-  paypal = "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=DKJ8HBXCAFQ3N&source=url" # Paypal URL
-  patreon = "https://www.patreon.com/christitustech" # Patreon URL
+  paypal = "" # Paypal URL
+  patreon = "" # Patreon URL
   bitcoin = "" # example path: images/donation/bitcoin-code-image.png
 
 [copyrightOptions]
