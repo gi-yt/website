@@ -1,0 +1,48 @@
+baseurl = "/"
+languageCode = "en-us"
+title = "Arya K's Website"
+theme = "hugo-classic"
+ignoreFiles = [
+  "\\.Rmd$",
+  "\\.Rmarkdown$",
+  "_cache$",
+  "\\.knit\\.md$",
+  "\\.utf8\\.md$"
+]
+footnotereturnlinkcontents = "↩"
+
+[permalinks]
+note = "/note/:day/:month/:year/:slug/"
+post = "/post/:day/:month/:year/:slug/"
+
+[[menu.main]]
+name = "Blog"
+url = "/blog/"
+weight = 1
+
+[[menu.main]]
+name = "Projects"
+url = "/projects"
+weight = 2
+
+[[menu.main]]
+name = "About"
+url = "/about"
+weight = 3
+
+[[menu.feed]]
+name = "RSS"
+url = "/index.xml"
+
+[params]
+description = "Arya's personal website and blog about mostly tech stuff."
+footer = "[GitHub](https://github.com/gi-yt) | [Source](https://github.com/gi-yt/website) | [LBRY](https://odysee.com/@aryakiran:9) "
+
+[markup.highlight]
+codeFences = false
+
+[markup.goldmark.renderer]
+unsafe = true
+
+
+
