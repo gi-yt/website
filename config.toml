@@ -26,9 +26,14 @@ url = "/projects"
 weight = 2
 
 [[menu.main]]
+name = "Contact"
+url = "/contact"
+weight = 3
+
+[[menu.main]]
 name = "About"
 url = "/about"
-weight = 3
+weight = 4
 
 [[menu.feed]]
 name = "RSS"
@@ -40,7 +45,18 @@ footer = "[GitHub](https://github.com/gi-yt) | [Source](https://github.com/gi-yt
 DateForm = "2.1.2006"
 
 [markup.highlight]
-codeFences = false
+anchorLineNos = false
+codeFences = true
+guessSyntax = false
+hl_Lines = ""
+lineAnchors = ""
+lineNoStart = 1
+lineNos = false
+lineNumbersInTable = true
+noClasses = true
+style = "monokai"
+tabWidth = 4
+
 
 [markup.goldmark.renderer]
 unsafe = true
